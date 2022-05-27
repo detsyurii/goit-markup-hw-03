@@ -8,20 +8,52 @@
     --dark-background-color: #2F303A;
 }
 
-body{
-font-family: "Roboto", sans-serif;
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
 }
 
 
-.list-item{
+.list-item {
     list-style: none;
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: none;   
+}
+
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 /* Header */
+
+.container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid teal;
+}
+
+.header-list{
+    display: flex;
+}
+
+.header-contacts{
+    display: flex;
+}
+
 
 .header-logo{
     font-family: 'Raleway';
@@ -83,14 +115,12 @@ font-family: "Roboto", sans-serif;
 }
 
 .hero-button{
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--white-text-color);
     background-color: var(--accent-color);
-    cursor: pointer;
 }
 
 .hero-button:hover,
@@ -204,14 +234,12 @@ color: rgba(255, 255, 255, 0.6);
 /* -------Portfolio-------- */
 
 .portfolio-button{
-font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
 background-color: var(--section-background-color);
-cursor: pointer;
 }
 
 .portfolio-button:hover{
