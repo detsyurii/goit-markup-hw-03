@@ -22,6 +22,9 @@ button {
     font-family: inherit;
 }
 
+img{
+    display: block;
+}
 
 .list-item {
     list-style: none;
@@ -31,14 +34,12 @@ button {
     text-decoration: none;   
 }
 
+
 body {
     font-family: "Roboto", sans-serif;
 }
 
-/* Header */
-
-.container{
-    display: flex;
+.container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -46,16 +47,36 @@ body {
     outline: 1px solid teal;
 }
 
+/* Header */
+
+.header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
 .header-list{
     display: flex;
 }
 
 .header-contacts{
     display: flex;
+    margin-left: auto;
 }
 
+.header-list .list-item:not(:last-child) {
+    margin-right: 50px;
+}
 
-.header-logo{
+.header-contacts .list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-logo {
+    margin-right: 93px;
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -101,6 +122,7 @@ body {
 
 /* Hero */
 
+
 .hero-headline {
     font-weight: 900;
     font-size: 44px;
@@ -110,17 +132,19 @@ body {
     color: var(--white-text-color);
 }
 
-.hero{
+.hero {
     background-color: var(--dark-background-color);
 }
 
-.hero-button{
+.hero-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--white-text-color);
     background-color: var(--accent-color);
+    border: transparent;
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -129,6 +153,10 @@ background-color: #188CE8;
 }
 
 /* Benefits */
+
+.benefits-content{
+    display: flex;
+}
 
 .benefits-title{
 font-size: 14px;
@@ -147,6 +175,10 @@ color: var(--second-text-color);
 
 /* About */
 
+.about-content {
+    display: flex;
+}
+
 .about-title{
 font-size: 36px;
 line-height: 1.17;
@@ -156,6 +188,11 @@ color: var(--main-text-color);
 }
 
 /* Team */
+
+.team-content {
+display: flex;
+}
+
 .team{
 background-color: var(--section-background-color);
 }
@@ -232,6 +269,15 @@ color: rgba(255, 255, 255, 0.6);
 
 
 /* -------Portfolio-------- */
+
+.portfolio-filter {
+    display: flex;
+}
+
+.portfolio-content {
+display: flex;
+flex-wrap: wrap;
+}
 
 .portfolio-button{
 font-weight: 500;
