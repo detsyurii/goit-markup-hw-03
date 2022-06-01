@@ -234,7 +234,12 @@ color: var(--second-text-color);
 
 .about-content {
     display: flex;
-    justify-content: space-between;
+    margin-right: -30px;
+}
+
+.about-content .list-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
 }
 
 .about img {
@@ -256,10 +261,13 @@ color: var(--main-text-color);
 
 .team-content {
 display: flex;
-justify-content: space-between;
+margin-right: -30px;
 }
 
 .team-content .list-item {
+flex-basis: calc(100% / 4 - 30px);
+margin-right: 30px;
+
 border: 1px solid #EEEEEE;
 background-color: var(--white-text-color);
 border-radius: 4px;
